@@ -1,6 +1,6 @@
 resources:
 #- argocd/dp/cicd.yaml
-- argodcd/dp/dev.yaml
+- argocd/dp/dev.yaml
 #- argocd/dp/stage.yaml
 #- argocd/dp/prod.yaml
 
