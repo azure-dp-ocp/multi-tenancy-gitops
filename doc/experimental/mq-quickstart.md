@@ -25,7 +25,7 @@
 
 - Run the bootstrap script, specify the git org `GIT_ORG` and the output directory to clone all repos `OUTPUT_DIR`. You can use `DEBUG=true` for verbose output.  Note, the deployment of all selected resources will take 30 - 45 minutes.  
     ```bash
-    curl -sfL https://raw.githubusercontent.com/cloud-native-toolkit-demos/multi-tenancy-gitops-mq/ocp47-2021-2/scripts/bootstrap.sh | DEBUG=true GIT_ORG=<YOUR_GIT_ORG> OUTPUT_DIR=mq-production bash
+    curl -sfL https://raw.githubusercontent.com/cloud-native-toolkit/multi-tenancy-gitops-mq/ocp47-2021-2/scripts/bootstrap.sh | DEBUG=true GIT_ORG=<YOUR_GIT_ORG> OUTPUT_DIR=mq-production bash
     ```
 
 - You can open the output directory containing all the git repositories with VSCode

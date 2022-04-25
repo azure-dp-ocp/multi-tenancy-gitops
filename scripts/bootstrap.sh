@@ -126,7 +126,7 @@ fork_repos () {
       GHREPONAME=$(gh api /repos/${GIT_ORG}/multi-tenancy-gitops-apps -q .name || true)
       if [[ ! ${GHREPONAME} = "multi-tenancy-gitops-apps" ]]; then
         echo "Fork not found, creating fork and cloning"
-        gh repo fork cloud-native-toolkit-demos/multi-tenancy-gitops-apps --clone --org ${GIT_ORG} --remote
+        gh repo fork cloud-native-toolkit/multi-tenancy-gitops-apps --clone --org ${GIT_ORG} --remote
         mv multi-tenancy-gitops-apps gitops-3-apps
       elif [[ ! -d gitops-3-apps ]]; then
         echo "Fork found, repo not cloned, cloning repo"
@@ -273,7 +273,7 @@ data:
     - upstreamRepoURL: \${GIT_BASEURL}/\${GIT_ORG}/\${GIT_GITOPS_APPLICATIONS}
       originRepoUrL: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_APPLICATIONS}
       originBranch: ${GIT_GITOPS_APPLICATIONS_BRANCH}
-    - upstreamRepoURL: https://github.com/cloud-native-toolkit-demos/multi-tenancy-gitops-apps.git
+    - upstreamRepoURL: https://github.com/cloud-native-toolkit/multi-tenancy-gitops-apps.git
       originRepoUrL: ${GIT_BASEURL}/${GIT_ORG}/${GIT_GITOPS_APPLICATIONS}
       originBranch: ${GIT_GITOPS_APPLICATIONS_BRANCH}
 EOF

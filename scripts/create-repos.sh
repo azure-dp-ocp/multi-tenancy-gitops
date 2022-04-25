@@ -166,7 +166,7 @@ create_repos () {
       GHREPONAME=$(gh api /repos/${GIT_ORG}/multi-tenancy-gitops-apps -q .name || true)
       if [[ ! ${GHREPONAME} = "multi-tenancy-gitops-apps" ]]; then
         echo "Repository ${GIT_GITOPS_APPLICATIONS_NAME} not found, creating from template and cloning"
-        gh repo create ${GIT_ORG}/multi-tenancy-gitops-apps --public --template https://github.com/cloud-native-toolkit-demos/multi-tenancy-gitops-apps
+        gh repo create ${GIT_ORG}/multi-tenancy-gitops-apps --public --template https://github.com/cloud-native-toolkit/multi-tenancy-gitops-apps
         gh repo clone ${GIT_ORG}/multi-tenancy-gitops-apps
         if [ ! -z ${NEW_FOLDERS} ]; then
           mv multi-tenancy-gitops-apps ${LOCAL_FOLDER_3}

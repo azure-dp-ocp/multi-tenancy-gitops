@@ -247,7 +247,7 @@ data:
     - upstreamRepoURL: \${GIT_BASEURL}/\${GIT_ORG}/\${GIT_GITOPS_APPLICATIONS}
       originRepoUrL: ${GITEA_BASEURL}/${GIT_ORG}/${GIT_GITOPS_APPLICATIONS}
       originBranch: ${GITEA_GITOPS_APPLICATIONS_BRANCH}
-    - upstreamRepoURL: https://github.com/cloud-native-toolkit-demos/multi-tenancy-gitops-apps.git
+    - upstreamRepoURL: https://github.com/cloud-native-toolkit/multi-tenancy-gitops-apps.git
       originRepoUrL: ${GITEA_BASEURL}/${GIT_ORG}/${GIT_GITOPS_APPLICATIONS}
       originBranch: ${GITEA_GITOPS_APPLICATIONS_BRANCH}
 EOF
