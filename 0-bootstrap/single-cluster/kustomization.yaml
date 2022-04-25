@@ -60,6 +60,3 @@ patches:
     - op: add
       path: /spec/sourceRepos/-
       value: https://github.com/azure-dp-ocp/multi-tenancy-gitops-apps.git
-    - op: add 
-      path: /spec/sourceRepos/-
-      value: https://github.com/cloud-native-toolkit-demos/multi-tenancy-gitops-apps.git 
