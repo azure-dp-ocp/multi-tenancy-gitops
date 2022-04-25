@@ -81,7 +81,7 @@ clone_repos () {
         GITOPS_REPOS=${GITOPS_REPOS}" ${GIT_BASEURL}/cloud-native-toolkit/multi-tenancy-gitops-apps,multi-tenancy-gitops-apps,gitops-3-apps"
 
         if [[ "${ACE_SCENARIO}" == "true" ]]; then
-          GITOPS_REPOS=${GITOPS_REPOS}" ${GIT_BASEURL}/cloud-native-toolkit-demos/ace-customer-details,ace-customer-details,src-ace-app-customer-details"
+          GITOPS_REPOS=${GITOPS_REPOS}" ${GIT_BASEURL}/cloud-native-toolkit/ace-customer-details,ace-customer-details,src-ace-app-customer-details"
         fi
     fi
 

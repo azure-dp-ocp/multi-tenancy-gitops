@@ -185,7 +185,7 @@ create_repos () {
         GHREPONAME=$(gh api /repos/${GIT_ORG}/ace-customer-details -q .name || true)
         if [[ ! ${GHREPONAME} = "ace-customer-details" ]]; then
           echo "Repository not found for ${GIT_GITOPS_ACE_SCENARIO_NAME}; creating from template and cloning"
-          gh repo create ${GIT_ORG}/ace-customer-details --public --template https://github.com/cloud-native-toolkit-demos/ace-customer-details
+          gh repo create ${GIT_ORG}/ace-customer-details --public --template https://github.com/cloud-native-toolkit/ace-customer-details
           gh repo clone ${GIT_ORG}/ace-customer-details
           if [ ! -z ${NEW_FOLDERS} ]; then
             mv ace-customer-details ${LOCAL_FOLDER_4}

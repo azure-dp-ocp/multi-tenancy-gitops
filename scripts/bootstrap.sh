@@ -141,7 +141,7 @@ fork_repos () {
         GHREPONAME=$(gh api /repos/${GIT_ORG}/ace-customer-details -q .name || true)
         if [[ ! ${GHREPONAME} = "ace-customer-details" ]]; then
           echo "Fork not found, creating fork and cloning"
-          gh repo fork cloud-native-toolkit-demos/ace-customer-details --clone --org ${GIT_ORG} --remote
+          gh repo fork cloud-native-toolkit/ace-customer-details --clone --org ${GIT_ORG} --remote
           mv ace-customer-details src-ace-app-customer-details
         elif [[ ! -d src-ace-app-customer-details ]]; then
           echo "Fork found, repo not cloned, cloning repo"

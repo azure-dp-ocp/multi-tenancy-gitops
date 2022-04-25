@@ -56,7 +56,7 @@
     ```bash
     cd mq-production/gitops-3-apps/scripts
 
-    curl -sfL https://raw.githubusercontent.com/cloud-native-toolkit-demos/multi-tenancy-gitops-apps/ocp47-2021-2/scripts/mq-kubeseal.sh | DEBUG=true GIT_USER=<GIT_USER> GIT_TOKEN=<GIT_TOKEN> GIT_ORG=<GIT_ORG> bash
+    curl -sfL https://raw.githubusercontent.com/cloud-native-toolkit/multi-tenancy-gitops-apps/ocp47-2021-2/scripts/mq-kubeseal.sh | DEBUG=true GIT_USER=<GIT_USER> GIT_TOKEN=<GIT_TOKEN> GIT_ORG=<GIT_ORG> bash
     ```
 
     As this script executes it will issue a `git diff` to allow you to review
